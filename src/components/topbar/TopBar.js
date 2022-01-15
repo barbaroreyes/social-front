@@ -8,8 +8,8 @@ const TopBar = () => {
          </div>
      <div className="topBar-center">
          <div className="searchbar">
-             <Search/>
-             <input type="text" className="" placeholder="Search fror friend or post , video"/>
+             <Search className='searchIncon'/>
+             <input type="text" className="inputSearch" placeholder="Search fror friend or post , video"/>
          </div>
          </div>
      <div className="topBar-rigth">
