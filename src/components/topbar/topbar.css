@@ -1,3 +1,49 @@
 .topBarContainer{
-    border-top: 1px solid black;
+    border: 1px solid #000000;
+    justify-content:space-around;
+    align-items:center;
+    display:flex;
+    height: 65px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(211, 187, 187);
+    
+
+}
+.topBar-left{
+    flex:3;
+   
+}
+.topBar-center{
+    flex:5;
+    
+}
+.topBar-rigth{
+    flex:4;
+  
+}
+.topbaricons{
+    display:flex;
+    margin: 30px;
+    padding:10px;
+}
+.imageProfile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.topBar-rigth{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.topbariconsItems{
+    margin: 10px;
+}
+.topbarlinks{
+    margin: 5px;
+}
+.logo{
+    font-size: 24px;
 }

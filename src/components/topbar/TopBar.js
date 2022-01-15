@@ -1,19 +1,36 @@
 import './topbar.css';
-
+import {Search , Person ,Chat, Notifications} from '@material-ui/icons'
 const TopBar = () => {
   return (
     <div className="topBarContainer">
      <div className="topBar-left">
          <span className="logo">exampl-social</span>
-         left</div>
+         </div>
      <div className="topBar-center">
          <div className="searchbar">
-             <input type="text" className="" placeholder="Search"/>
+             <Search/>
+             <input type="text" className="" placeholder="Search fror friend or post , video"/>
          </div>
-         center</div>
+         </div>
      <div className="topBar-rigth">
-     <div>Notificaciones</div>
-         rigth</div>
+     <div className='topbarlinks'>HomePage</div>
+     <div className='topbarlinks'>timeline</div>
+     <div className='topbaricons'>
+         <div className='topbariconsItems'>
+         <Person/>
+         <span className='topbarIconBadge'>1</span>
+         </div>
+         <div className='topbariconsItems'>
+         <Chat/>
+         <span className='topbarIconBadge'>2</span>
+         </div>
+         <div className='topbariconsItems'>
+         <Notifications/>
+         <span className='topbarIconBadge'>3</span>
+         </div>
+     </div>
+     <img src='/assets/usa.jpg' className="imageProfile " alt="alt" />
+         </div>
     </div>
   );
 }
