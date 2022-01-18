@@ -1,0 +1,12 @@
+.sidebar{
+    flex: 3;
+    height: calc(100vh - 65px) ;
+    background-color: grey;
+}
+.sideWrapper{
+    padding : 20px ;
+    background-color: green
+}
+.sidebar-list{
+    list-style: none;
+}

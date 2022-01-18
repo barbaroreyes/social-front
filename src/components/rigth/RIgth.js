@@ -1,8 +1,8 @@
-import React from 'react';
+import  './rigth.css';
 
 const Rigth = () => {
   return (
-    <div className ='rigth'>
+    <div className ='right'>
       Rigth 
     </div>
   );
