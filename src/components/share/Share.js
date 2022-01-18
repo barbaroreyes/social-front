@@ -4,7 +4,9 @@ const Share = () => {
   return (
     <div className="share">
       <div className="shareWrapper">
-          <div className="shareTop"></div>
+          <div className="shareTop">
+              sharetop
+          </div>
       </div>
     </div>
   );
