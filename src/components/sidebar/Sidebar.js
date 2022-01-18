@@ -13,10 +13,10 @@ const Sidebar = () => {
   return (
     <div className ='sidebar'>
       <div className='sideWrapper'>
-        <ul className='sidebar-ul'>
+        <ul className='sidebarList'>
         <li className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItem">Feed</span>
+            <span className="sidebarListItemText">Feed</span>
           </li>
           <li className="sidebarListItem">
             <Chat className="sidebarIcon" />
@@ -49,6 +49,70 @@ const Sidebar = () => {
           <li className="sidebarListItem">
             <School className="sidebarIcon" />
             <span className="sidebarListItemText">Courses</span>
+          </li>
+        </ul>
+        <button className="slideButton">Show More</button>
+        <hr className="slideHr"/>
+        <ul className="friendsList">
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
+            <span className="friendProfileName">name1</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
+            <span className="friendProfileName">name2</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
+            <span className="friendProfileName">name3</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
+            <span className="friendProfileName">name4</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
+            <span className="friendProfileName">name5</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
+            <span className="friendProfileName">name1</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
+            <span className="friendProfileName">name2</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
+            <span className="friendProfileName">name3</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
+            <span className="friendProfileName">name4</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
+            <span className="friendProfileName">name5</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
+            <span className="friendProfileName">name1</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
+            <span className="friendProfileName">name2</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
+            <span className="friendProfileName">name3</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
+            <span className="friendProfileName">name4</span>
+          </li>
+          <li className="sidebarFriendItem">
+            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
+            <span className="friendProfileName">name5</span>
           </li>
         </ul>
       </div>
