@@ -11,7 +11,7 @@
    background-color: aliceblue;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(188, 215, 238);
+    background-color: rgb(12, 112, 200);
 }
 .sideWrapper{
     padding : 20px ;
