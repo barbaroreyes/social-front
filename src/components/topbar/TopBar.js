@@ -14,7 +14,7 @@ const TopBar = () => {
          </div>
      <div className="topBar-rigth">
      <div className='topbarlinks'>HomePage</div>
-     <div className='topbarlinks'>timeline</div>
+     <div className='topbarlinks'>TimeLine</div>
      <div className='topbaricons'>
          <div className='topbariconsItems'>
          <Person/>
