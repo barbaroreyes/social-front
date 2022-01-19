@@ -33,7 +33,7 @@
 }
 .shareBotton{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
 }
 .shareOptions{
@@ -42,10 +42,20 @@
 }
 .shareOption{
     display: flex;
+  
     align-items:center;
     margin-left: 15px;
     cursor: pointer;
 }
 .shareIcon{
     font-size: 20px;
+
+}
+.shareOptionText{
+    font-size: 20px;
+}
+.shareButom{
+    border: none;
+    padding: 7px ;
+    border-radius: 7px;
 }
