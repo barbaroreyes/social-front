@@ -58,4 +58,7 @@
     border: none;
     padding: 7px ;
     border-radius: 7px;
+    font-weight: 500;
+    margin-right: 30px;
+    cursor: pointer;
 }
