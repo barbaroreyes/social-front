@@ -1,5 +1,5 @@
 import  './share.css';
-import {PermMedia} from '@material-ui/icons'
+import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
 const Share = () => {
   return (
     <div className="share">
@@ -12,27 +12,27 @@ const Share = () => {
           <div className="shareBotton">
             <div className="shareOptions">
             <div className="shareOption">
-                 <PermMedia className="shareIcon"/>
+                 <PermMedia htmlColor='tomato' className="shareIcon"/>
                  <span className="shareOptionText">Photo or video</span>
 
              </div>
              <div className="shareOption">
-                 <PermMedia className="shareIcon"/>
-                 <span className="shareOptionText">Photo or video</span>
+                 <Label  htmlColor='tomato' className="shareIcon"/>
+                 <span className="shareOptionText">Tag</span>
 
              </div>
              <div className="shareOption">
-                 <PermMedia className="shareIcon"/>
-                 <span className="shareOptionText">Photo or video</span>
+                 <Room htmlColor='tomato' className="shareIcon"/>
+                 <span className="shareOptionText">Location</span>
 
              </div>
              <div className="shareOption">
-                 <PermMedia className="shareIcon"/>
-                 <span className="shareOptionText">Photo or video</span>
+                 <EmojiEmotions htmlColor='tomato' className="shareIcon"/>
+                 <span className="shareOptionText">Feeling</span>
 
              </div>
              <div className="shareOption">
-                 <PermMedia className="shareIcon"/>
+                 <PermMedia htmlColor='tomato' className="shareIcon"/>
                  <span className="shareOptionText">Photo or video</span>
 
              </div>
