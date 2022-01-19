@@ -1,9 +1,22 @@
 import './post.css';
-
+import { MoreVert } from '@material-ui/icons';
 const Post = () => {
   return (
-    <div>
-      post
+    <div className="post">
+    <div className="postWrapper">
+        <div className="postTop">
+        <div className="postLeft">
+            <img className="postImage" src="/assets/usa.jpg" alt="profile" />
+            <span className="postUserName">Name</span>
+            <span className="postDate">5 min ago</span>
+        </div>
+        <div className="postRigth">
+            <MoreVert/>
+        </div>
+        </div>
+        <div className="postCenter"></div>
+        <div className="postBottom"></div>
+    </div>
     </div>
   );
 }
