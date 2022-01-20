@@ -14,8 +14,18 @@ const Post = () => {
             <MoreVert/>
         </div>
         </div>
-        <div className="postCenter"></div>
-        <div className="postBottom"></div>
+        <div className="postCenter">
+            <span className="postText">My First Post</span>
+            <img className="postImag" src="/assets/caridad.jpg" alt="profile" />
+        </div>
+        <div className="postBottom">
+        <div className="postBottomleft">
+        <img  src="/assets/like.png" alt="profile" />
+        <img  src="/assets/heart.png" alt="profile" />
+
+        </div>
+        <div className="postBottomRigth"></div>
+        </div>
     </div>
     </div>
   );
