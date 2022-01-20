@@ -1,4 +1,46 @@
 .right{
     flex: 3.5;
-    background-color: lightblue;
+   
+}
+.rigthWrapper{
+    padding: 20px 20px 0 0;
+} 
+.birthContainer{
+   display: flex; 
+   align-items: center;
+}
+.birthImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.birthText{
+    font-weight: 300;
+    font-size: 15px;
+}
+.rigtAdd{
+    width:100%;
+    border-radius:10px;
+    margin: 10px ;
+}
+.rigthFriendsList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.friend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.friendProfileContainer{
+   margin-right: 10px; 
+   position: relative;
+}
+.friendProfileImage{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit:cover;
 }
