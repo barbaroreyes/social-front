@@ -20,11 +20,14 @@ const Post = () => {
         </div>
         <div className="postBottom">
         <div className="postBottomleft">
-        <img  src="/assets/like.png" alt="profile" />
-        <img  src="/assets/heart.png" alt="profile" />
+        <img className='likeIcon' src="/assets/like.png" alt="profile" />
+        <img className='likeIcon' src="/assets/heart.png" alt="profile" />
+        <span className='postLikeCounter'>100 peorple like this post</span>
 
         </div>
-        <div className="postBottomRigth"></div>
+        <div className="postBottomRigth">
+            <span className='postComentText'>20</span>
+        </div>
         </div>
     </div>
     </div>
