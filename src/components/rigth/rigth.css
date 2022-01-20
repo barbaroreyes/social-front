@@ -35,12 +35,25 @@
     margin-bottom: 15px;
 }
 .friendProfileContainer{
-   margin-right: 10px; 
+   margin-right: 20px; 
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .friendProfileImage{
+    display: flex;
     width:40px;
     height: 40px;
     border-radius: 50%;
     object-fit:cover;
+}
+.friendOnline{
+    width:12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:rgb(63, 218, 63);
+    position:absolute;
+    top: -2px;
+    right: 0 ;
 }

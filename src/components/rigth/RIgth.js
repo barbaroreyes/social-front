@@ -20,6 +20,27 @@ const Rigth = () => {
             </div>
             <span className="friendUsername">Papo Reyes</span>
           </li>
+          <li className="friend">
+            <div className="friendProfileContainer">
+              <img className="friendProfileImage" src ='/assets/ratoncito.jpg' alt ='profile' />
+              <span className="friendOnline"></span>
+            </div>
+            <span className="friendUsername">Papo Reyes</span>
+          </li>
+           <li className="friend">
+            <div className="friendProfileContainer">
+              <img className="friendProfileImage" src ='/assets/ratoncito.jpg' alt ='profile' />
+              <span className="friendOnline"></span>
+            </div>
+            <span className="friendUsername">Papo Reyes</span>
+          </li>
+          <li className="friend">
+            <div className="friendProfileContainer">
+              <img className="friendProfileImage" src ='/assets/ratoncito.jpg' alt ='profile' />
+              <span className="friendOnline"></span>
+            </div>
+            <span className="friendUsername">Papo Reyes</span>
+          </li>
         </ul>
       </div>
     </div>
