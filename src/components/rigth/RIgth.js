@@ -25,7 +25,30 @@ const Rigth = ({profile}) => {
   }
   const ProfileRightBar = () => {
     return(
-      <h1>hey is my profile</h1>
+      <>
+      <h4 className ="rigthBarTitle">user Infomation</h4>
+      <div className="rigthbarInfo">
+      <div className="rigthbarInfoItem">
+        <span className ='rigthbarInfoIKey'>City</span>
+        <span className ='rigthbarInfoIValue'>New York</span>
+      </div>
+      <div className="rigthbarInfoItem">
+        <span className ='rigthbarInfoIKey'>From:</span>
+        <span className ='rigthbarInfoIValue'>Madrid</span>
+      </div>
+      <div className="rigthbarInfoItem">
+        <span className ='rigthbarInfoIKey'>Relationship</span>
+        <span className ='rigthbarInfoIValue'>Single</span>
+      </div>
+      </div>
+      <h4 className='rightbarTitle'>User friends</h4>
+      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowings">
+        <img  className="rigthbarfallowingsImg" src ='/assets/usa.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      </div>
+      </>
     )
   }
   return (
