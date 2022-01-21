@@ -8,7 +8,9 @@ import { RssFeed,
   WorkOutline,
   Event,
   School} from '@material-ui/icons'
-
+  import Closefriends from '../../components/closefriends/Closefriends.js'
+  import {Users} from '../../data';
+  
 const Sidebar = () => {
   return (
     <div className ='sidebar'>
@@ -54,66 +56,10 @@ const Sidebar = () => {
         <button className="slideButton">Show More</button>
         <hr className="slideHr"/>
         <ul className="friendsList">
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
-            <span className="friendProfileName">name1</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
-            <span className="friendProfileName">name2</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
-            <span className="friendProfileName">name3</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
-            <span className="friendProfileName">name4</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
-            <span className="friendProfileName">name5</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
-            <span className="friendProfileName">name1</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
-            <span className="friendProfileName">name2</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
-            <span className="friendProfileName">name3</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
-            <span className="friendProfileName">name4</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
-            <span className="friendProfileName">name5</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/grencar.jpg"/>
-            <span className="friendProfileName">name1</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/shark.jpg"/>
-            <span className="friendProfileName">name2</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/redcar.jpg"/>
-            <span className="friendProfileName">name3</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/orangeCar.jpg"/>
-            <span className="friendProfileName">name4</span>
-          </li>
-          <li className="sidebarFriendItem">
-            <img className="friendProfile" alt="profile" src="/assets/profile.jpg"/>
-            <span className="friendProfileName">name5</span>
-          </li>
+          {Users.map((user, i)=>{
+           return (<Closefriends key={i} user ={user}/>)
+          })}
+          
         </ul>
       </div>
     </div>
