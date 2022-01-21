@@ -56,4 +56,12 @@
     position:absolute;
     top: -2px;
     right: 0 ;
+    border: 2px solid white
+}
+.friendUsername{
+    font-weight: 500;
+}
+.rigthTitle{
+    margin-bottom: 40px;
+    font-size: 20px;
 }

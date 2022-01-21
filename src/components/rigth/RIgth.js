@@ -11,7 +11,7 @@ const Rigth = () => {
           </span>
         </div>
         <img className="rigtAdd" src='/assets/ad.png' alt="profile"/>
-        <h4 className="rigth">Online Frieds</h4>
+        <h4 className="rigthTitle">Online Friends</h4>
         <ul className="rigthFriendsList">
           <li className="friend">
             <div className="friendProfileContainer">
