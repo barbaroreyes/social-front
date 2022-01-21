@@ -90,3 +90,12 @@
 .rigthbarInfoIValue{
     font-weight: 300;
 }
+.rigthbarfallowings{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.rigthbarfallowing{
+    display: flex;
+    flex-direction: column;
+}

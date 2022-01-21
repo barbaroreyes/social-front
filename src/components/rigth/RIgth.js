@@ -44,24 +44,28 @@ const Rigth = ({profile}) => {
       </div>
       <h4 className='rightbarTitle'>User friends</h4>
       <div className="rigthbarfallowings">
-      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowing">
         <img  className="rigthbarfallowingsImg" src ='/assets/usa.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
-      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowing">
         <img  className="rigthbarfallowingsImg" src ='/assets/shark.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
-      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowing">
         <img  className="rigthbarfallowingsImg" src ='/assets/redcar.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
-      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowing">
         <img  className="rigthbarfallowingsImg" src ='/assets/leon.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
-      <div className="rigthbarfallowings">
+      <div className="rigthbarfallowing">
         <img  className="rigthbarfallowingsImg" src ='/assets/canguro.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      <div className="rigthbarfallowing">
+        <img  className="rigthbarfallowingsImg" src ='/assets/orangeCar.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       </div>
