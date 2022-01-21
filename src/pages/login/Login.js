@@ -12,7 +12,11 @@ const Login = () => {
             </div>
             <div className="loginRight">
                 <div className="loginBox">
-                    
+                    <input placeholder='Email' className="loginInput"/>
+                    <input placeholder='PassWord' className="loginInput"/>
+                    <button className="loginButton">log in </button>
+                    <span className="loginForgot">Forgot password?</span>
+                    <button className="loginRegisterButton">Create a new account</button>
                 </div>
             </div>
         </div>
