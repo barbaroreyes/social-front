@@ -3,6 +3,9 @@
     height: calc(100vh - 65px) ;
     background-color: grey;
     overflow-y: scroll;
+    position:sticky;
+    top: 50px;
+
 }
 ::webkit-scrollbar{
     width: 5px;

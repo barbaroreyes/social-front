@@ -1,32 +1,35 @@
 import './post.css';
 import { MoreVert } from '@material-ui/icons';
-const Post = () => {
+import {Users} from '../../data';
+
+const Post = ({post}) => {
+
   return (
     <div className="post">
     <div className="postWrapper">
         <div className="postTop">
         <div className="postLeft">
-            <img className="postImage" src="/assets/usa.jpg" alt="profile" />
-            <span className="postUserName">Name</span>
-            <span className="postDate">5 min ago</span>
+            <img className="postImage" src={Users.filter(u => u.id === post.userId)[0].profilePicture} alt="profile" />
+            <span className="postUserName">{Users.filter(u => u.id === post.userId)[0].username}</span>
+            <span className="postDate">{post.date}</span>
         </div>
         <div className="postRigth">
             <MoreVert/>
         </div>
         </div>
         <div className="postCenter">
-            <span className="postText">My First Post</span>
-            <img className="postImag" src="/assets/caridad.jpg" alt="profile" />
+            <span className="postText">{post?.desc}</span>
+            <img className="postImag" src={post.photo} alt="profile" />
         </div>
         <div className="postBottom">
         <div className="postBottomleft">
         <img className='likeIcon' src="/assets/like.png" alt="profile" />
         <img className='likeIcon' src="/assets/heart.png" alt="profile" />
-        <span className='postLikeCounter'>100 peorple like this post</span>
+        <span className='postLikeCounter'>{post.like} peorple like this post</span>
 
         </div>
         <div className="postBottomRigth">
-            <span className='postComentText'>20</span>
+            <span className='postComentText'>{post.coment} </span>
         </div>
         </div>
     </div>
