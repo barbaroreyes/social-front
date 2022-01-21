@@ -3,7 +3,7 @@
    
 }
 .rigthWrapper{
-    padding: 20px 20px 0 0;
+    padding: 20px 20px;
 } 
 .birthContainer{
    display: flex; 
@@ -64,4 +64,29 @@
 .rigthTitle{
     margin-bottom: 40px;
     font-size: 20px;
+}
+.rigthBarTitle{
+    font-size: 28px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+.rigthbarfallowingsImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius:5px ;
+}
+.rigthbarInfo{
+    margin-bottom: 30px;
+}
+.rigthbarInfoItem{
+    margin-bottom:15px;
+}
+.rigthbarInfoIKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color:#555;
+}
+.rigthbarInfoIValue{
+    font-weight: 300;
 }

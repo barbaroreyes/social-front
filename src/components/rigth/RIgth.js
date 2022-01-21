@@ -1,6 +1,7 @@
 import  './rigth.css';
 import {Users} from '../../data';
 import Online from '../online/Online';
+
 const Rigth = ({profile}) => {
   const HomeRigthBar = () =>  {
       return (
@@ -45,6 +46,22 @@ const Rigth = ({profile}) => {
       <div className="rigthbarfallowings">
       <div className="rigthbarfallowings">
         <img  className="rigthbarfallowingsImg" src ='/assets/usa.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      <div className="rigthbarfallowings">
+        <img  className="rigthbarfallowingsImg" src ='/assets/shark.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      <div className="rigthbarfallowings">
+        <img  className="rigthbarfallowingsImg" src ='/assets/redcar.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      <div className="rigthbarfallowings">
+        <img  className="rigthbarfallowingsImg" src ='/assets/leon.jpg' alt=''/>
+        <span className ='rigthbarfallowingsName'> Bebo reyes</span>
+      </div>
+      <div className="rigthbarfallowings">
+        <img  className="rigthbarfallowingsImg" src ='/assets/canguro.jpg' alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       </div>
