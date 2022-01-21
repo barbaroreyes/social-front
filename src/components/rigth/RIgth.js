@@ -1,11 +1,11 @@
 import  './rigth.css';
 import {Users} from '../../data';
 import Online from '../online/Online';
-const Rigth = () => {
-  return (
-    <div className ='right'>
-      <div className="rigthWrapper">
-        <div className="birthContainer">
+const Rigth = ({profile}) => {
+  const HomeRigthBar = () =>  {
+      return (
+        <>
+         <div className="birthContainer">
           <img className="birthImg"  src='/assets/birthDay.jpg'   alt="profile"/>
           <span className="birthText">
             <b>pepe gomez</b><hr/>and <b>3 other </b>have  a birthDay Today
@@ -19,6 +19,19 @@ const Rigth = () => {
          })}
           
         </ul>
+        </>
+
+      )
+  }
+  const ProfileRightBar = () => {
+    return(
+      <h1>hey is my profile</h1>
+    )
+  }
+  return (
+    <div className ='right'>
+      <div className="rigthWrapper">
+       <ProfileRightBar/>
       </div>
     </div>
   );
