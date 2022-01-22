@@ -33,8 +33,8 @@ const PF = process.env.REACT_APP_PUBLIC_FORDER ;
         </div>
         <div className="postBottom">
         <div className="postBottomleft">
-        <img className='likeIcon' src="/assets/like.png" onClick={LikeHandle}  alt="profile" />
-        <img className='likeIcon' src="/assets/heart.png" alt="profile" />
+        <img className='likeIcon' src={`${PF}like.png`} onClick={LikeHandle}  alt="profile" />
+        <img className='likeIcon' src={`${PF}heart.png`} alt="profile" />
         <span className='postLikeCounter'>{like} peorple like this post</span>
 
         </div>
