@@ -1,7 +1,7 @@
 import React ,{useState , useEffect} from 'react'
 import './post.css';
 import { MoreVert } from '@material-ui/icons';
-
+import {format} from 'timeago.js' 
 import axios from 'axios'
 const Post = ({post}) => {
 const [like ,setLike] = useState(post.likes.length)
@@ -33,7 +33,7 @@ useEffect(() => {
         <div className="postLeft">
             <img className="postImage" src={ user.profilePicture || PF + 'noAvatar.png'} alt="profile" />
             <span className="postUserName">{user.userName}</span>
-            <span className="postDate">{ post.date}</span>
+            <span className="postDate">{ format(post.createdAt) }</span>
         </div>
         <div className="postRigth">
             <MoreVert/>
