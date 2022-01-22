@@ -75,7 +75,7 @@ const Rigth = ({profile}) => {
   return (
     <div className ='right'>
       <div className="rigthWrapper">
-       <ProfileRightBar/>
+       {profile ?<ProfileRightBar/> :<HomeRigthBar/>}
       </div>
     </div>
   );

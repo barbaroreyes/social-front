@@ -12,10 +12,12 @@ const Register = () => {
             </div>
             <div className="loginRight">
                 <div className="loginBox">
-                    <input placeholder='Email' className="loginInput"/>
-                    <input placeholder='PassWord' className="loginInput"/>
+                <input placeholder='Username' className="loginInput"/>
+                <input placeholder='Email' className="loginInput"/>
+                    <input placeholder='Password' className="loginInput"/>
+                    <input placeholder='PassWord Again' className="loginInput"/>
                     <button className="loginButton">Sign up </button>
-                    <button className="loginRegisterButton">Login in to Account</button>
+                    <button className="loginRegisterButton">Login into Account</button>
                 </div>
             </div>
         </div>
