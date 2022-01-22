@@ -3,16 +3,18 @@ import {Users} from '../../data';
 import Online from '../online/Online';
 
 const Rigth = ({profile}) => {
+  const PF = process.env.REACT_APP_PUBLIC_FORDER ;
+  // {`${PF}like.png`}
   const HomeRigthBar = () =>  {
       return (
         <>
          <div className="birthContainer">
-          <img className="birthImg"  src='/assets/birthDay.jpg'   alt="profile"/>
+          <img className="birthImg"  src={`${PF}birthDay.jpg`}   alt="profile"/>
           <span className="birthText">
             <b>pepe gomez</b><hr/>and <b>3 other </b>have  a birthDay Today
           </span>
         </div>
-        <img className="rigtAdd" src='/assets/ad.png' alt="profile"/>
+        <img className="rigtAdd" src={`${PF}ad.png`} alt="profile"/>
         <h4 className="rigthTitle">Online Friends</h4>
         <ul className="rigthFriendsList">
          {Users.map((user,i)=>{
@@ -45,27 +47,27 @@ const Rigth = ({profile}) => {
       <h4 className='rightbarTitle'>User friends</h4>
       <div className="rigthbarfallowings">
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/usa.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}usa.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/shark.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}shark.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/redcar.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}redcar.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/leon.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}leon.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/canguro.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}canguro.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       <div className="rigthbarfallowing">
-        <img  className="rigthbarfallowingsImg" src ='/assets/orangeCar.jpg' alt=''/>
+        <img  className="rigthbarfallowingsImg" src ={`${PF}orangeCar.jpg`} alt=''/>
         <span className ='rigthbarfallowingsName'> Bebo reyes</span>
       </div>
       </div>
