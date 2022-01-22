@@ -2,15 +2,14 @@ import React ,{useState , useEffect} from 'react'
 import './post.css';
 import { MoreVert } from '@material-ui/icons';
 import {format} from 'timeago.js' 
-import axios from 'axios'
+import {Link} from 'react-router-dom'
+import axios from 'axios';
+
 const Post = ({post}) => {
 const [like ,setLike] = useState(post.likes.length)
 const [isLike ,setIsLike] = useState(false)
 const [user ,setUser] = useState({})
-
 const PF = process.env.REACT_APP_PUBLIC_FORDER ;
-
- 
 
 useEffect(() => {
   const fetchUser = async() => {
@@ -18,9 +17,7 @@ useEffect(() => {
     setUser(res.data)
   }
   fetchUser()
- 
 },[post.userId])
-
 
  const LikeHandle = () => {
      setLike(isLike ? like - 1 : like + 1)
@@ -31,7 +28,9 @@ useEffect(() => {
     <div className="postWrapper">
         <div className="postTop">
         <div className="postLeft">
+          <Link to ={`profile/${user.userName}`}>
             <img className="postImage" src={ user.profilePicture || PF + 'noAvatar.png'} alt="profile" />
+            </Link>
             <span className="postUserName">{user.userName}</span>
             <span className="postDate">{ format(post.createdAt) }</span>
         </div>
