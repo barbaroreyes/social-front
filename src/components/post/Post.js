@@ -1,13 +1,25 @@
-import React, {useState} from  'react'
+import React ,{useState , useEffect} from 'react'
 import './post.css';
 import { MoreVert } from '@material-ui/icons';
 import {Users} from '../../data';
-
+import axios from 'axios'
 const Post = ({post}) => {
 const [like ,setLike] = useState(post.like)
 const [isLike ,setIsLike] = useState(false)
 
+
 const PF = process.env.REACT_APP_PUBLIC_FORDER ;
+const [user ,setUser] = useState({})
+ 
+
+useEffect(() => {
+  const fetchUser = async() => {
+    const res =  await axios.get('posts/timeline/61e0d10d2620aeb9bfce7a96')
+    setUser(res.data)
+  }
+  fetchUser()
+ 
+},[])
 
 
  const LikeHandle = () => {
