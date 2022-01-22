@@ -7,6 +7,8 @@ const Post = ({post}) => {
 const [like ,setLike] = useState(post.like)
 const [isLike ,setIsLike] = useState(false)
 
+const PF = process.env.REACT_APP_PUBLIC_FORDER ;
+
 
  const LikeHandle = () => {
      setLike(isLike ? like - 1 : like + 1)
@@ -17,17 +19,17 @@ const [isLike ,setIsLike] = useState(false)
     <div className="postWrapper">
         <div className="postTop">
         <div className="postLeft">
-            <img className="postImage" src={Users.filter(u => u.id === post.userId)[0].profilePicture} alt="profile" />
+            <img className="postImage" src={ PF + Users.filter(u => u.id === post.userId)[0].profilePicture} alt="profile" />
             <span className="postUserName">{Users.filter(u => u.id === post.userId)[0].username}</span>
-            <span className="postDate">{post.date}</span>
+            <span className="postDate">{ post.date}</span>
         </div>
         <div className="postRigth">
             <MoreVert/>
         </div>
         </div>
         <div className="postCenter">
-            <span className="postText">{post?.desc}</span>
-            <img className="postImag" src={post.photo} alt="profile" />
+            <span className="postText">{post.desc}</span>
+            <img className="postImag" src={PF + post.photo} alt="profile" />
         </div>
         <div className="postBottom">
         <div className="postBottomleft">
